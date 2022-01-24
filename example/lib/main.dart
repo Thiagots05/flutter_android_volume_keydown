@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -23,10 +25,15 @@ class _MyAppState extends State<MyApp> {
 
   void startListening() {
     subscription = FlutterAndroidVolumeKeydown.stream.listen((event) {
+      // print('00000 - $event');
       if (event == HardwareButton.volume_down) {
-        print("Volume down received");
+        log("Volume down received");
       } else if (event == HardwareButton.volume_up) {
-        print("Volume up received");
+        log("Volume up received");
+      } else if (event == HardwareButton.hadset) {
+        log("Hadset received");
+      } else if (event == HardwareButton.next) {
+        log("next received");
       }
     });
   }
