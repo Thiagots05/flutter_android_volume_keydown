@@ -2,7 +2,7 @@
     package="dev.darttools.flutter_android_volume_keydown_example">
    <application
         android:label="flutter_android_volume_keydown_example"
-        android:name="${applicationName}"
+        android:name="io.flutter.app.FlutterApplication"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

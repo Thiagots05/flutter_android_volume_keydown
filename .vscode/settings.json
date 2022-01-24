@@ -1,3 +1,4 @@
 {
-    "dart.flutterSdkPath": "/home/thiago/snap/flutter_2_5/flutter"
+    "dart.flutterSdkPath": "/home/thiago/development/flutter",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }

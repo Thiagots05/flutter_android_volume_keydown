@@ -9,7 +9,6 @@ class FlutterAndroidVolumeKeydown {
   static Stream<HardwareButton> stream = _channel.receiveBroadcastStream()
       // .cast<int>()
       .map((event) {
-    print(event);
     switch (event) {
       case 1:
         return HardwareButton.volume_down;
